@@ -1,0 +1,55 @@
+$primary: #262626;
+$secondary: #3f3f3f;
+$third: #f5f5f5;
+$fourth: #dedede;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,900');
+
+html {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16px;
+}
+
+html, body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#root {
+	min-height: 100vh;
+	min-width: 100vw;
+	display: flex;
+	flex-direction: column;
+
+	header, footer {
+		display: flex;
+		justify-content: center;
+		padding: 20px;
+		color: $third;
+		text-transform: uppercase;
+	}
+
+	header {
+		position: relative;
+		background-color: transparent;
+
+		img {
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: -1;
+		}
+	}
+
+	footer {
+		background-color: $primary;
+		padding: 10px;
+		font-size: 12px;
+		font-weight: 300;
+	}
+
+	main {
+		flex: 1;
+	}
+}
